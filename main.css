@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'montserrat', sans-serif;
+    background-image: none;
+    background-size: cover;
+    background-position: top center;
+}
+
+.app-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #FFFFFF;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+
+.text-field {
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: #DCDCDC;
+    border-radius: 16px 0 16px 0;
+    border-bottom: 3px solid #007054;
+    margin-bottom: 25px;
+
+    color: #000000;
+    font-size: 20px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+}
+
+.buttons {
+    height: 40px;
+    width: 150px;
+    max-width: 280px;
+    background-color: #007054;
+    line-height: 24px;
+    font-size: 24px;
+    text-align: center;
+    outline: none;
+    border-radius: 25px 25px 25px 25px;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+    margin-bottom: 70px;
+    color: #DCDCDC;
+}
+
+.action_btn {
+    height: 40px;
+    width: 150px;
+    transition-duration: 0.4s;
+    max-width: 280px;
+    background-color:#007054;
+    line-height:24px;
+    font-size:24px;
+    text-align:center;
+    outline: none;
+    border-radius: 25px 25px 25px 25px;
+    font-family: 'montserrat', sans-serif;
+    font-weight:400;
+    margin-bottom: 10px;
+    color: #DCDCDC;
+}
+
+header input:focus {
+    background-color: #FFFFFF;
+}
+
+main {
+    flex: 1 1 100%;
+    padding: 25px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #007054;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: inherit;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+ .panel {
+     padding: 0 10px;
+     background-color: white;
+     max-height: 0;
+     overflow: hidden;
+     transition: max-height 0.2s ease-out;
+ }
+
